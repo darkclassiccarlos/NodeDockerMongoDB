@@ -1,0 +1,28 @@
+{
+    "name": "NodeDockerMongoDB",
+    "version": "1.0.0",
+    "description": "Configuracion con de una bd mongo con docker y node",
+    "main": "index.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "nodemon src/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/darkclassiccarlos/NodeDockerMongoDB.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/darkclassiccarlos/NodeDockerMongoDB/issues"
+    },
+    "homepage": "https://github.com/darkclassiccarlos/NodeDockerMongoDB#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongoose": "^5.10.9"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.6"
+    }
+}

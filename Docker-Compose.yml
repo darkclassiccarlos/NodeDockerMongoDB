@@ -1,0 +1,21 @@
+version: "3"
+
+services: 
+    aplication:
+        container_name: appmongo
+        restart: always
+        build: . 
+        ports: 
+            - "5000:3000"
+        links: 
+            - mongodb
+        volumes: 
+            - .:/usr/src/app
+    mongodb:
+        container_name: mongodatabase
+        image: mongo
+        ports: 
+            - "27017:27017"
+        logging:
+            driver: none
+
