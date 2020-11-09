@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 
 mongoose.connect('mongodb://mongodb/mydatabase', {
+        useCreateIndex: true,
         useNewUrlParser: true,
         useUnifiedTopology: true
     })
